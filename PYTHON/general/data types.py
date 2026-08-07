@@ -82,7 +82,7 @@ print(str3.index("o"))  # Output: 4 (returns the index of the first occurrence o
 #  while index() raises a ValueError.
 
 print(str3.find("Python"))  # Output: -1 (returns -1 because "Python" is not found)
-print(str3.index("Python"))  # Output: ValueError: substring not found (raises an error because "Python" is not found)
+#print(str3.index("Python"))  # Output: ValueError: substring not found (raises an error because "Python" is not found)
 
 #There are various types of strings in Python, including single-line strings, multi-line strings, and raw strings.
 
@@ -192,7 +192,33 @@ print(dict1)  # Output: {'name': 'Alice', 'age': 31, 'country': 'USA'} (the key-
 dict1.clear()  # Removes all key-value pairs from the dictionary   
 print(dict1)  # Output: {} (the dictionary is now empty)
 del dict1  # Deletes the dictionary from memory
-print(dict1)  # Output: NameError: name 'dict1' is not defined (the dictionary has been deleted and is no longer accessible)    
+#print(dict1)  # Output: NameError: name 'dict1' is not defined (the dictionary has been deleted and is no longer accessible)    
 
 
-############################################ End of code ######################################################
+############################################ Arrays ######################################################
+from array import *
+
+x=array('i',[1,2,-3,5,0])
+y=array('i',[1,3,4,6,7,5])
+print(x)
+x.append(78) # only can add one element
+print(x)
+x.extend([9,65,71]) #can extend array by useing this version
+print(x)
+x.insert(2,77) #in this way we can insert value to the place we wanted to.
+print(x)
+
+x.pop(4) #we can remove a value what is in place num 4(left to 5)
+print(x)
+x.pop() #in this way we can remove last value in right
+print(x)
+x.remove(77) #then 77 is removed from the array(in this case we have to use what we want to remove value in parthences)
+print(x)
+
+z=x+y #for do this , all arrays must be in same data type.
+print(z)
+
+for i in x:
+    print(i)
+
+################################################ End #####################################################
