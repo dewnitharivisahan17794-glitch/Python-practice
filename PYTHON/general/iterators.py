@@ -48,3 +48,24 @@ print(next(itr))
 print(next(itr))
 print(next(itr))
 print(next(itr))
+
+
+#Generator function
+
+def fib():
+    a=0
+    b=1
+    while True:
+        c=a+b
+        yield a
+        a,b=b,c
+
+y=fib()
+
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+print(next(y))
+
