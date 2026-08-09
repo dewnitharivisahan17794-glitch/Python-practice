@@ -1,0 +1,6 @@
+Hi welcome to the world of file handling in Python.
+ In this example, we are opening a file named 'Hello.txt' 
+ in read mode and printing its contents to the console
+  Make sure that the file exists in the specified path before running the code.
+
+  to run the code, simply execute the script and it will display the contents of 'Hello.txt' in the console.
