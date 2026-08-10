@@ -222,3 +222,11 @@ for i in x:
     print(i)
 
 ################################################ End #####################################################
+
+#Zip function
+
+Name=["kamal","sunil","Nimal","Ranil","sunimal"]
+Age=[23,25,67,78,54]
+
+details=list(zip(Name,Age))
+print(details)
