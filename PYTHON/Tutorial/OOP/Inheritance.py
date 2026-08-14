@@ -11,7 +11,7 @@ class vehicle_2(Vehicle_1):
     def feature2(self):
         print("automatic transmission, air conditioning, power steering, sunroof")
 
-car1 = vehicle_1()
+car1 = Vehicle_1()
 car1.feature1()  # Output: manual transmission, air conditioning, power steering
 car1.feature2()  # This will raise an AttributeError because feature2 is not defined in Vehicle_1.
 
