@@ -8,6 +8,7 @@ Choices.geometry(f'500x500')
 Choices.iconbitmap("C:/Users/USER/OneDrive/Desktop/programs/PYTHON/Python_ GUI/Tkinter/icon.ico")
 checkboxes=[tk.StringVar(), tk.StringVar(), tk.StringVar()]
 radiobutton=tk.StringVar()
+scale_var=tk.DoubleVar(value=50)
 i=0
 monthname=[month_name[i] for i in range (1,13)]
 
@@ -49,5 +50,13 @@ spin1.pack()
 
 spin2=ttk.Spinbox(Choices, values=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])
 spin2.pack(pady=10)
+
+lable1=ttk.Label(Choices, text="progressbar With scaler")
+lable1.pack(pady=10)
+
+progressbar=ttk.Progressbar(Choices, length=250, variable=scale_var)
+progressbar.pack()
+scaler=ttk.Scale(Choices, command=lambda value:print(value),variable=scale_var, from_=1, to=100, orient="horizontal", length=250)
+scaler.pack()
 
 Choices.mainloop()
